@@ -59,8 +59,8 @@ app.get("/logout", (req, res) => {
     res.redirect("/login");
   });
 });
-
+const port = 3000;
 // Start the server
-app.listen(3000, () => {
-  console.log("Server running on http://localhost:3000");
+app.listen(port, () => {
+  console.log(`Server running on ${port}`);
 });
